@@ -37,7 +37,7 @@ def merge(arrA, arrB):
         merged_arr[k] = arrB[j]
         j += 1
         k += 1
-
+    print(f'Merged Array!: {merged_arr}')
     return merged_arr
 
 
@@ -45,7 +45,7 @@ arr_a = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 arr_b = [0, 1, 2, 3, 4, 5]
 print(merge(arr_a, arr_b))  # [0, 1, 1, 2, 3, 4, 5, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 # TO-DO: implement the Merge Sort function below recursively
-# Base Case: Array is sorted
+# Base Case: Array is sorted (with length of 1)
 
 
 def merge_sort(arr):
